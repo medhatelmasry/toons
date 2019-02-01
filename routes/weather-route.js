@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var controller = require('../controllers/weather-controller');
+var controller = require('../controllers/toon-controller');
 
 router.get('/', controller.get);
 

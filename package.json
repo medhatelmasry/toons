@@ -5,15 +5,14 @@
   "description": "",
   "main": "server.js",
   "author": {
-    "name": "",
+    "name": "Medhat Elmasry",
     "email": ""
   },
   "dependencies": {
     "body-parser": "1.17.2",
     "express": "^4.15.4",
     "mocha": "^3.5.0",
-    "request": "2.81.0",
-    "xml2js": "0.4.18"
+    "request": "2.81.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

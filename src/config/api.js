@@ -1,5 +1,5 @@
 const config = {
-    api_url: "http://www.mocky.io/v2/5995b39c110000db02cc42fe",
+    api_url: "https://toonapi.azurewebsites.net/api/cartoon",
     port: 3000
 };
 
