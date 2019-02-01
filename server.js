@@ -6,13 +6,13 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var port = process.env.port || api.port
 
-var aero = require('./routes/weather-route');
+var aero = require('./routes/toon-route');
 
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/weather', aero);
+app.use('/toon', aero);
 
 let server = module.exports = app;
 
