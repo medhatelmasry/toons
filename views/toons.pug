@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.container
+    h2.page-header= title
+    a(href= "/users")= "Users"
+    table.table.striped
+      tr
+        th Name
+        th Picture
+      each item in jsondata
+        tr
+          td= item.name
+          td
+            img(src= "https://toonapi.azurewebsites.net/" + item.pictureUrl alt= item.name style= "width: 80px;")
