@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-const api = require('./src/config');
+const api = require('./config');
 var express = require('express');
 var bodyParser = require('body-parser');
 var port = process.env.port || process.env.PORT || api.port

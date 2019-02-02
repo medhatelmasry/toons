@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var controller = require('../controllers/toon-controller');
-const api = require('../src/config');
+const api = require('../config');
 const request = require('request');
 
 router.get('/', function (req, res) {
@@ -15,6 +14,5 @@ router.get('/', function (req, res) {
         res.render('index', { title: 'Users', jsondata: jsondata })
     });  
 });
-
 
 module.exports = router;
