@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div.container
+    h2.page-header= "Users"
+    table.table.striped
+      tr
+        th Id
+        th Username
+        th Name
+        th Email
+        th City
+        th Zip Code
+      each item in jsondata
+        tr
+          td= item.id
+          td= item.username
+          td= item.name
+          td= item.email
+          td= item.address.city
+          td= item.address.zipcode

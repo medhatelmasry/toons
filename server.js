@@ -1,18 +1,19 @@
 ﻿'use strict';
 
-var http = require('http');
-var api = require('./src/config/api');
+const api = require('./src/config');
 var express = require('express');
 var bodyParser = require('body-parser');
-var port = process.env.port || api.port
+var port = process.env.port || process.env.PORT || api.port
 
-var aero = require('./routes/toon-route');
+var userRoute = require('./routes/user-route');
 
 var app = express();
+
+app.set('view engine', 'pug')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/toon', aero);
+app.use('/', userRoute);
 
 let server = module.exports = app;
 
