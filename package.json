@@ -1,12 +1,15 @@
 {
-  "name": "node-xml2js",
+  "name": "json-express",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "author": {
     "name": "Medhat Elmasry",
     "email": ""
+  },
+  "scripts": {
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "1.17.2",
