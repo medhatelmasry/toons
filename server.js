@@ -3,7 +3,9 @@
 const api = require('./config');
 var express = require('express');
 var bodyParser = require('body-parser');
-var port = process.env.port || process.env.PORT || api.port
+var port = process.env.WEBSITES_PORT 
+    || process.env.port 
+    || process.env.PORT;
 
 var appRoute = require('./routes/app-routes');
 
